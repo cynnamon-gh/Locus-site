@@ -114,6 +114,41 @@ const amenities = [
     ),
   },
   {
+    title: "Washer & dryer",
+    description: "In-house laundry. No quarters, no schlepping.",
+    icon: (
+      <Icon>
+        <rect x="4" y="2.5" width="16" height="19" rx="2" />
+        <circle cx="12" cy="13" r="5" />
+        <path d="M9.5 13a2.5 2.5 0 005 0" />
+        <circle cx="7" cy="5.5" r="0.5" fill="currentColor" />
+        <circle cx="9.5" cy="5.5" r="0.5" fill="currentColor" />
+      </Icon>
+    ),
+  },
+  {
+    title: "Dishwasher",
+    description: "Cook the weekly house dinner; let the machine clean up.",
+    icon: (
+      <Icon>
+        <rect x="4" y="2.5" width="16" height="19" rx="2" />
+        <path d="M4 7.5h16" />
+        <path d="M8 11v6M12 11v6M16 11v6" />
+        <circle cx="6" cy="5" r="0.5" fill="currentColor" />
+      </Icon>
+    ),
+  },
+  {
+    title: "Very high ceilings",
+    description: "Old-house proportions — rooms that feel airy and open.",
+    icon: (
+      <Icon>
+        <path d="M4 4h16M4 4v3M20 4v3" />
+        <path d="M12 8v12M12 8l-3 3M12 8l3 3" />
+      </Icon>
+    ),
+  },
+  {
     title: "Cats",
     description:
       "The house has cats (hi, Steve) — worth knowing if you are allergic.",

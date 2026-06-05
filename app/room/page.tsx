@@ -55,10 +55,18 @@ export default function RoomPage() {
                 <p>
                   A fifth bedroom is kept free as a shared office and guest
                   room, so your visitors have somewhere to stay. The house
-                  comes with a huge-for-the-city backyard (fire pit and
+                  comes with very high ceilings, a washer and dryer, a
+                  dishwasher, a huge-for-the-city backyard (fire pit and
                   seating area in the works), a super cute front porch, a
                   projector, lots of art, lots of books — and housemates who
                   each cook one vegetarian dinner for the house every week.
+                </p>
+                <p>
+                  The location is hard to beat: University City, very close
+                  to the Penn campus, with multiple grocery stores nearby
+                  (the closest a six-minute walk), a movie theater, lots of
+                  restaurants, and beautiful Clark Park — farmers markets,
+                  community events — just down the street.
                 </p>
                 <p>
                   We are connected to Effective Altruism and adjacent

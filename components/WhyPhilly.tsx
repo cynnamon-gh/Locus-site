@@ -9,11 +9,6 @@ export function WhyPhilly() {
     >
       <div className="mx-auto max-w-3xl">
         <SectionHeading eyebrow="Place" title="Why Philadelphia" />
-        <Reveal delay={0.06}>
-          <p className="mt-4 text-sm italic text-muted">
-            Draft placeholder — we will refine this copy as Locus grows.
-          </p>
-        </Reveal>
         <Reveal delay={0.1}>
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
             <p>
@@ -29,6 +24,13 @@ export function WhyPhilly() {
               a walkable neighborhood rhythm that supports both focused work
               and casual encounters. It is a good city for hosting a guest for
               a week, running a small salon, or simply having room to think.
+            </p>
+            <p>
+              Locus itself is in University City, very close to the Penn
+              campus, with a million great amenities nearby: multiple grocery
+              stores (the closest a six-minute walk away), a movie theater,
+              lots of restaurants, and beautiful Clark Park — home to farmers
+              markets and tons of community events.
             </p>
           </div>
         </Reveal>
