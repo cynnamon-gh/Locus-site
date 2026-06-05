@@ -69,8 +69,9 @@ const amenities = [
     ),
   },
   {
-    title: "Guest room",
-    description: "Small but functional and private for visitors.",
+    title: "Office & guest room",
+    description:
+      "A fifth bedroom kept free as a shared office — and a room for your guests. Feel free to host.",
     icon: (
       <Icon>
         <path d="M3 18.5v-8M3 14h18v4.5" />
@@ -80,8 +81,42 @@ const amenities = [
     ),
   },
   {
+    title: "Lots of books",
+    description: "Shelves all over the house. Borrow freely.",
+    icon: (
+      <Icon>
+        <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+      </Icon>
+    ),
+  },
+  {
+    title: "Huge backyard",
+    description:
+      "Big for the city — a fire pit and seating area are in the works.",
+    icon: (
+      <Icon>
+        <path d="M12 3c2.5 3 5 5.5 5 9a5 5 0 01-10 0c0-3.5 2.5-6 5-9z" />
+        <path d="M12 13c1 1.2 2 2.2 2 3.6a2 2 0 01-4 0c0-1.4 1-2.4 2-3.6z" />
+        <path d="M4 21h16" />
+      </Icon>
+    ),
+  },
+  {
+    title: "Front porch",
+    description: "Super cute. Made for slow mornings and long evenings.",
+    icon: (
+      <Icon>
+        <path d="M2.5 10L12 3.5 21.5 10" />
+        <path d="M4.5 10v10.5M19.5 10v10.5M4.5 14h15" />
+        <path d="M8.5 14v6.5M12 14v6.5M15.5 14v6.5" />
+      </Icon>
+    ),
+  },
+  {
     title: "Cats",
-    description: "The house has cats — worth knowing if you are allergic.",
+    description:
+      "The house has cats (hi, Steve) — worth knowing if you are allergic.",
     icon: (
       <Icon>
         <path d="M5 9.5L4.5 4l3.5 2.5h8L19.5 4 19 9.5a7 7 0 01.5 3c0 4-3.5 6.5-7.5 6.5S4.5 16.5 4.5 12.5a7 7 0 01.5-3z" />
@@ -100,8 +135,9 @@ export function House() {
         <SectionHeading eyebrow="The house" title="Inside Locus" />
         <Reveal delay={0.08}>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-            Four bedrooms, shared common spaces, and amenities chosen for
-            people who like hosting friends and taking ideas seriously.
+            Five bedrooms, two baths, shared common spaces, and amenities
+            chosen for people who like hosting friends and taking ideas
+            seriously — with a generally friendly, open-door policy.
           </p>
         </Reveal>
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

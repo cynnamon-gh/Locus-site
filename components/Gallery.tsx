@@ -1,16 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Reveal } from "./motion/Reveal";
 import { SectionHeading } from "./SectionHeading";
 
 const galleryImages = [
   { src: "/images/hero/hero.jpg", alt: "Locus exterior in West Philadelphia", featured: true },
-  { src: "/images/gallery/01-crowd.jpg", alt: "Community gathering outdoors" },
-  { src: "/images/gallery/02-presentation.jpg", alt: "Presentation and discussion space" },
-  { src: "/images/gallery/03-call-room.jpg", alt: "Small meeting room" },
-  { src: "/images/gallery/04-sunroom.jpg", alt: "Bright sunroom seating" },
-  { src: "/images/gallery/05-lobby.jpg", alt: "Welcoming common area" },
-  { src: "/images/gallery/06-gathering.jpg", alt: "People gathered indoors" },
-  { src: "/images/gallery/08-outdoor.jpg", alt: "Outdoor campus space" },
+  { src: "/images/house/kitchen.jpg", alt: "The kitchen" },
+  { src: "/images/house/bedroom-5.jpg", alt: "A sunny bedroom" },
+  { src: "/images/house/stairs.jpg", alt: "The wooden staircase" },
+  { src: "/images/house/bedroom-2.jpg", alt: "A bedroom with built-in shelves" },
+  { src: "/images/house/bedroom-1.jpg", alt: "The open room's desk nook" },
+  { src: "/images/house/bathroom.jpg", alt: "A bathroom" },
+  { src: "/images/house/bedroom-3.jpg", alt: "The open room" },
 ];
 
 export function Gallery() {
@@ -20,9 +21,16 @@ export function Gallery() {
         <SectionHeading eyebrow="Photos" title="The house & the vibe" />
         <Reveal delay={0.08}>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-            Exterior shots are from Locus in West Philadelphia. Other images
-            are placeholders from community spaces we admire — we will swap in
-            Locus-specific photos as they are ready.
+            A sampling of the house. The furnished shots are the
+            realtor&apos;s staging, not our decor — there are many more in
+            the{" "}
+            <Link
+              href="/photos"
+              className="font-medium text-accent underline-offset-4 hover:underline"
+            >
+              full photo slideshow
+            </Link>
+            , along with a video walkthrough.
           </p>
         </Reveal>
         <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">

@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion, useReducedMotion, useScroll } from "motion/react";
-import { NAV_SECTIONS } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
@@ -20,25 +21,25 @@ export function SiteNav() {
         />
       )}
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:h-[4.25rem] md:px-8">
-        <a
-          href="#top"
+        <Link
+          href="/"
           className="font-display text-xl font-medium tracking-tight text-foreground md:text-2xl"
         >
           Locus
-        </a>
+        </Link>
 
         <nav
-          className="hidden items-center gap-8 md:flex"
+          className="hidden items-center gap-6 md:flex lg:gap-8"
           aria-label="Primary"
         >
-          {NAV_SECTIONS.map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
+          {NAV_LINKS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
               className="text-sm text-muted transition-colors hover:text-foreground"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -78,15 +79,15 @@ export function SiteNav() {
           aria-label="Mobile"
         >
           <ul className="flex flex-col gap-1">
-            {NAV_SECTIONS.map((item) => (
-              <li key={item.id}>
-                <a
-                  href={`#${item.id}`}
+            {NAV_LINKS.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
                   className="block min-h-11 py-3 text-base text-foreground"
                   onClick={() => setOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

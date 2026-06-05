@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -38,6 +40,23 @@ export function Footer() {
           </span>
           West Philadelphia · {year}
         </p>
+        <nav aria-label="Footer" className="flex gap-5">
+          <Link href="/room" className="transition-colors hover:text-foreground">
+            The room
+          </Link>
+          <Link
+            href="/residents"
+            className="transition-colors hover:text-foreground"
+          >
+            Residents
+          </Link>
+          <Link
+            href="/photos"
+            className="transition-colors hover:text-foreground"
+          >
+            Photos
+          </Link>
+        </nav>
         <p>Part of the Effective Altruism ecosystem and adjacent communities.</p>
       </div>
     </footer>
