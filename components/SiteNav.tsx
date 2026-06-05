@@ -1,13 +1,24 @@
 "use client";
 
 import { useState } from "react";
+import { motion, useReducedMotion, useScroll } from "motion/react";
 import { NAV_SECTIONS } from "@/lib/constants";
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const reduceMotion = useReducedMotion();
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/80 bg-parchment/90 backdrop-blur-md">
+      {/* Reading-progress hairline */}
+      {!reduceMotion && (
+        <motion.div
+          aria-hidden
+          className="absolute inset-x-0 bottom-[-1px] h-[2px] origin-left bg-gradient-to-r from-terracotta to-accent"
+          style={{ scaleX: scrollYProgress }}
+        />
+      )}
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:h-[4.25rem] md:px-8">
         <a
           href="#top"

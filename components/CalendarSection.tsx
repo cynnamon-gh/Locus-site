@@ -1,4 +1,5 @@
 import { CALENDAR_URL } from "@/lib/constants";
+import { Reveal } from "./motion/Reveal";
 import { SectionHeading } from "./SectionHeading";
 
 export function CalendarSection() {
@@ -11,20 +12,22 @@ export function CalendarSection() {
         <SectionHeading
           eyebrow="Events"
           title="Follow our calendar"
-          className="[&_h2]:text-center"
+          className="[&_h2]:text-center [&_p]:justify-center"
         />
-        <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted">
-          Public events, open houses, and community gatherings show up on our
-          shared Google Calendar. Subscribe to see what is coming up.
-        </p>
-        <a
-          href={CALENDAR_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-10 inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-8 text-base font-medium text-cream transition-opacity hover:opacity-90"
-        >
-          Open Google Calendar
-        </a>
+        <Reveal delay={0.1}>
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-muted">
+            Public events, open houses, and community gatherings show up on our
+            shared Google Calendar. Subscribe to see what is coming up.
+          </p>
+          <a
+            href={CALENDAR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-8 text-base font-medium text-cream transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:shadow-accent/25 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+          >
+            Open Google Calendar
+          </a>
+        </Reveal>
       </div>
     </section>
   );
