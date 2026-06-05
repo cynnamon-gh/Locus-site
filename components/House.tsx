@@ -23,7 +23,7 @@ function Icon({ children }: { children: ReactNode }) {
 const amenities = [
   {
     title: "Projector",
-    description: "For talks, movies, and working through ideas together.",
+    description: "Talks, movie nights, and the occasional slide-deck argument.",
     icon: (
       <Icon>
         <rect x="2.5" y="8" width="15" height="9" rx="2" />
@@ -34,7 +34,7 @@ const amenities = [
   },
   {
     title: "Lots of art",
-    description: "The space is curated to feel lived-in and inspiring.",
+    description: "The walls are mostly full. We keep going anyway.",
     icon: (
       <Icon>
         <rect x="3.5" y="4.5" width="17" height="13" rx="1" />
@@ -46,7 +46,7 @@ const amenities = [
   },
   {
     title: "Board games",
-    description: "A shelf ready for strategy nights and casual play.",
+    description: "A serious collection, exercised at biweekly game nights.",
     icon: (
       <Icon>
         <rect x="4" y="4" width="16" height="16" rx="3" />
@@ -60,7 +60,7 @@ const amenities = [
   },
   {
     title: "Intentional seating",
-    description: "Layouts designed for conversation, not just screens.",
+    description: "Chairs arranged so people end up talking to each other. It works.",
     icon: (
       <Icon>
         <path d="M5.5 11V6.5a2 2 0 012-2h9a2 2 0 012 2V11" />
@@ -71,7 +71,7 @@ const amenities = [
   {
     title: "Office & guest room",
     description:
-      "A fifth bedroom kept free as a shared office — and a room for your guests. Feel free to host.",
+      "The fifth bedroom stays free as a shared office and guest room. Visitors welcome.",
     icon: (
       <Icon>
         <path d="M3 18.5v-8M3 14h18v4.5" />
@@ -93,7 +93,7 @@ const amenities = [
   {
     title: "Huge backyard",
     description:
-      "Big for the city — a fire pit and seating area are in the works.",
+      "Genuinely large for the city. Fire pit and seating area in the works.",
     icon: (
       <Icon>
         <path d="M12 3c2.5 3 5 5.5 5 9a5 5 0 01-10 0c0-3.5 2.5-6 5-9z" />
@@ -104,7 +104,7 @@ const amenities = [
   },
   {
     title: "Front porch",
-    description: "Super cute. Made for slow mornings and long evenings.",
+    description: "Objectively cute. Good for coffee and watching the street go by.",
     icon: (
       <Icon>
         <path d="M2.5 10L12 3.5 21.5 10" />
@@ -140,7 +140,7 @@ const amenities = [
   },
   {
     title: "Very high ceilings",
-    description: "Old-house proportions — rooms that feel airy and open.",
+    description: "Old-house proportions. More air than strictly necessary.",
     icon: (
       <Icon>
         <path d="M4 4h16M4 4v3M20 4v3" />
@@ -170,9 +170,8 @@ export function House() {
         <SectionHeading eyebrow="The house" title="Inside Locus" />
         <Reveal delay={0.08}>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-            Five bedrooms, two baths, shared common spaces, and amenities
-            chosen for people who like hosting friends and taking ideas
-            seriously — with a generally friendly, open-door policy.
+            Five bedrooms, two baths, and common spaces we actually use.
+            General policy: friendly, doors open.
           </p>
         </Reveal>
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -18,19 +18,17 @@ export function Gallery() {
   return (
     <section id="gallery" className="scroll-mt-24 px-5 py-20 md:px-8 md:py-28">
       <div className="mx-auto max-w-6xl">
-        <SectionHeading eyebrow="Photos" title="The house & the vibe" />
+        <SectionHeading eyebrow="Photos" title="Around the house" />
         <Reveal delay={0.08}>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-            A sampling of the house. The furnished shots are the
-            realtor&apos;s staging, not our decor — there are many more in
-            the{" "}
+            A sample. Furnished shots are the realtor&apos;s staging. The{" "}
             <Link
               href="/photos"
               className="font-medium text-accent underline-offset-4 hover:underline"
             >
-              full photo slideshow
-            </Link>
-            , along with a video walkthrough.
+              full set
+            </Link>{" "}
+            has everything, plus a video walkthrough.
           </p>
         </Reveal>
         <div className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">

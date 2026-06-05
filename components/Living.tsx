@@ -15,28 +15,26 @@ export function Living() {
           <Reveal delay={0.08}>
             <div className="space-y-5 text-lg leading-relaxed text-muted">
               <p>
-                Locus is a five-bedroom, two-bath house. Three rooms are home
-                to the current residents, one is kept free as a shared office
-                and guest room, and one is open — we are looking for a
-                resident who fits the house culture: thoughtful,
-                community-minded, and comfortable sharing space with others
-                doing meaningful work.
+                Locus has five bedrooms and two baths. Three bedrooms are
+                occupied, one is a shared office and guest room, and one is
+                open. We are looking for someone thoughtful and
+                community-minded who wants to live with people who take ideas
+                seriously.
               </p>
               <p>
-                Want the full picture? The room has its own page with photos,
-                the utilities breakdown, and how we share costs — and you can{" "}
+                The room has its own page: photos, the utilities math, and
+                how we split costs. You can also{" "}
                 <Link
                   href="/residents"
                   className="font-medium text-accent underline-offset-4 hover:underline"
                 >
                   meet the residents
                 </Link>{" "}
-                you would be living with.
+                first — recommended, since you would be living with us.
               </p>
               <p>
-                Not looking to move in? We also host short-term stays — if
-                you are passing through Philadelphia and need a place to land
-                for a bit,{" "}
+                Just passing through Philadelphia? We host short-term stays
+                too —{" "}
                 <a
                   href="#contact"
                   className="font-medium text-accent underline-offset-4 hover:underline"

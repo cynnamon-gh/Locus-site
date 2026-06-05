@@ -41,42 +41,40 @@ export default function RoomPage() {
       <SiteNav />
       <main className="px-5 pb-20 pt-28 md:px-8 md:pb-28 md:pt-36">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading eyebrow="The open room" title="One room, waiting" />
+          <SectionHeading eyebrow="Living here" title="The open room" />
           <div className="mt-10 grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-start">
             <Reveal delay={0.08}>
               <div className="space-y-5 text-lg leading-relaxed text-muted">
                 <p>
-                  Locus is a five-bedroom, two-bath house, and one bedroom is
-                  open. It has hardwood floors, big windows, a closet,{" "}
-                  <em>and</em> a built-in shelving nook — the realtor staged
-                  it with a bed on one side and a desk nook on the other, and
-                  it comfortably fits both.
+                  Locus has five bedrooms; this one is open. Hardwood floors,
+                  big windows, a closet, and a built-in shelving nook. In the
+                  realtor&apos;s staging it fits a bed on one side and a desk
+                  on the other — the furniture was theirs, but the geometry
+                  checks out.
                 </p>
                 <p>
-                  A fifth bedroom is kept free as a shared office and guest
-                  room, so your visitors have somewhere to stay. The house
-                  comes with very high ceilings, a washer and dryer, a
-                  dishwasher, a huge-for-the-city backyard (fire pit and
-                  seating area in the works), a super cute front porch, a
-                  projector, lots of art, lots of books — and housemates who
-                  each cook one vegetarian dinner for the house every week.
+                  The rest of the house: very high ceilings, washer and
+                  dryer, dishwasher, a genuinely large backyard (fire pit in
+                  the works), a front porch, a projector, and a lot of art
+                  and books. The fifth bedroom stays free as a shared office
+                  and guest room, so your visitors do not cost you floor
+                  space. Each resident cooks one vegetarian dinner for the
+                  house per week — you would too.
                 </p>
                 <p>
-                  The location is hard to beat: University City, very close
-                  to the Penn campus, with multiple grocery stores nearby
-                  (the closest a six-minute walk), a movie theater, lots of
-                  restaurants, and beautiful Clark Park — farmers markets,
-                  community events — just down the street.
+                  Location: University City, close to Penn&apos;s campus.
+                  Multiple grocery stores within a short walk (nearest: six
+                  minutes), a movie theater, plenty of restaurants, and Clark
+                  Park down the street.
                 </p>
                 <p>
-                  We are connected to Effective Altruism and adjacent
-                  communities, and we like hosting — EA events, game nights,
-                  good dinners. You can{" "}
+                  We are EA-adjacent and we like hosting — talks, game
+                  nights, dinners.{" "}
                   <Link
                     href="/residents"
                     className="font-medium text-accent underline-offset-4 hover:underline"
                   >
-                    meet the residents
+                    Meet the residents
                   </Link>{" "}
                   to see who you would be living with.
                 </p>
@@ -183,17 +181,13 @@ export default function RoomPage() {
 
           {/* How we share costs */}
           <div className="mt-20 max-w-3xl">
-            <SectionHeading
-              eyebrow="Money, handled thoughtfully"
-              title="How we share costs"
-            />
+            <SectionHeading eyebrow="Logistics" title="How we split costs" />
             <Reveal delay={0.1}>
               <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
                 <p>
-                  Rent and utilities are the easy part. For common-space
-                  purchases — furniture, kitchen gear, the eventual fire pit —
-                  we have thought hard about sharing the burden fairly. We
-                  follow the approach from Supernuclear&apos;s{" "}
+                  Rent and utilities are simple: everything splits equally.
+                  For shared purchases — furniture, kitchen gear, the
+                  eventual fire pit — we follow Supernuclear&apos;s{" "}
                   <a
                     href={SUPERNUCLEAR_FINANCE_GUIDE_URL}
                     target="_blank"
@@ -202,7 +196,7 @@ export default function RoomPage() {
                   >
                     guide to managing finances in a coliving house
                   </a>{" "}
-                  and use{" "}
+                  and pool money with{" "}
                   <a
                     href={POOLMONEY_URL}
                     target="_blank"
@@ -210,11 +204,11 @@ export default function RoomPage() {
                     className="font-medium text-accent underline-offset-4 hover:underline"
                   >
                     Pool
-                  </a>{" "}
-                  — built by the team behind Braid, the app the guide
-                  recommends — to pool money for shared purchases, so no one
-                  person is ever on the hook and everything stays
-                  transparent.
+                  </a>
+                  , built by the team behind Braid, the app the guide
+                  recommends. The system&apos;s virtues: no one fronts money
+                  alone, nothing is hidden, and nobody has to be the house
+                  accountant.
                 </p>
               </div>
             </Reveal>

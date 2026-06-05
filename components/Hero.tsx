@@ -92,9 +92,8 @@ export function Hero() {
             variants={item}
             className="mt-5 max-w-xl text-[clamp(1rem,1.4vw,1.25rem)] leading-relaxed text-cream/90"
           >
-            A group house and community space for people working on what
-            matters — Effective Altruism and adjacent communities, thinking
-            together in Philadelphia.
+            An EA-adjacent group house and event space in West Philadelphia.
+            Four residents, a busy calendar, and one open room.
           </motion.p>
         </div>
 

@@ -19,14 +19,12 @@ export default function PhotosPage() {
       <SiteNav />
       <main className="px-5 pb-20 pt-28 md:px-8 md:pb-28 md:pt-36">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading eyebrow="Photos" title="A look around the house" />
+          <SectionHeading eyebrow="Photos" title="The full set" />
           <Reveal delay={0.08}>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-              Every photo we have — from the realtor&apos;s tour and our own
-              first walkthrough, back when the house was empty. A heads-up:
-              anything with furniture in it is the realtor&apos;s staging,
-              not our actual stuff. Use the arrow keys or the thumbnails to
-              browse.
+              Every photo we have, from the realtor&apos;s tour and our own
+              first walkthrough. Anything with furniture in it is the
+              realtor&apos;s staging, not our actual stuff. Arrow keys work.
             </p>
           </Reveal>
           <Reveal delay={0.16}>

@@ -12,25 +12,23 @@ export function WhyPhilly() {
         <Reveal delay={0.1}>
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
             <p>
-              Philadelphia sits between major East Coast hubs without the same
-              pressure on housing costs. For people in EA and adjacent worlds,
-              that can mean a sustainable place to live while staying connected
-              to research, nonprofits, and visiting collaborators who pass
-              through the region.
+              The case for Philadelphia: it sits between New York and DC and
+              costs dramatically less than either. For people in EA and
+              adjacent worlds, that means staying on the East Coast circuit
+              without rent eating your runway.
             </p>
             <p>
-              West Philly in particular has a long tradition of communal
-              houses, student and faculty energy from nearby universities, and
-              a walkable neighborhood rhythm that supports both focused work
-              and casual encounters. It is a good city for hosting a guest for
-              a week, running a small salon, or simply having room to think.
+              West Philly specifically has a long tradition of communal
+              houses, university energy from Penn and Drexel, and a walkable
+              neighborhood rhythm. It is a good place to host a guest for a
+              week, run a small salon, or think.
             </p>
             <p>
-              Locus itself is in University City, very close to the Penn
-              campus, with a million great amenities nearby: multiple grocery
-              stores (the closest a six-minute walk away), a movie theater,
-              lots of restaurants, and beautiful Clark Park — home to farmers
-              markets and tons of community events.
+              Locus is in University City, close to Penn&apos;s campus.
+              Within a short walk: multiple grocery stores (nearest one six
+              minutes away), a movie theater, a lot of restaurants, and Clark
+              Park — farmers markets, community events, respectable dog
+              density.
             </p>
           </div>
         </Reveal>
@@ -43,9 +41,8 @@ export function WhyPhilly() {
         </Reveal>
         <Reveal delay={0.14}>
           <p className="text-lg leading-relaxed text-muted">
-            We chose Philadelphia for Locus because we want a physical anchor
-            on the East Coast that feels welcoming to the communities we care
-            about.
+            We put Locus here because the East Coast needed another anchor
+            point, and Philadelphia made it affordable to build one.
           </p>
         </Reveal>
       </div>

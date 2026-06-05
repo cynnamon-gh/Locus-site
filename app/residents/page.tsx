@@ -114,8 +114,8 @@ export default function ResidentsPage() {
                 The fifth chair at dinner is empty
               </h2>
               <p className="mx-auto mt-3 max-w-xl text-lg text-muted">
-                One room is open. If living here sounds like your kind of
-                thing, we would love to hear from you.
+                One room is open. If this sounds like your scene, say so —
+                worst case, we have a nice chat.
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-4">
                 <Link
