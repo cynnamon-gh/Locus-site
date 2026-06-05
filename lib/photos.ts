@@ -79,6 +79,12 @@ export const PHOTOS: Photo[] = [
   ...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18].map(tour),
   // First-walkthrough photos
   ...[3712, 3713, 3714, 3715, 3716, 3718, 3720, 3721, 3723, 3725].map(life),
+  // The finale
+  {
+    src: "/images/house/steve.jpg",
+    alt: "Steve, an orange tabby, lying in a doorway while March, a black foster cat, watches from behind",
+    caption: "Steve, holding the doorway — March (foster, short-term resident) behind",
+  },
 ];
 
 /** The three photos of the room that is for rent. */

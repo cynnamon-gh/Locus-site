@@ -20,6 +20,7 @@ export const POOLMONEY_URL = "https://app.poolmoney.com";
 
 export const CONTACT_TOPICS = [
   "Residency inquiry",
+  "Short-term stay request",
   "Visit or event",
   "Other",
 ] as const;

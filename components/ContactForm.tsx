@@ -59,8 +59,8 @@ export function ContactForm({ contactEmail }: { contactEmail?: string }) {
       <div className="mx-auto max-w-2xl">
         <SectionHeading eyebrow="Reach out" title="Contact" />
         <p className="mt-6 text-lg leading-relaxed text-muted">
-          Questions about the open room, visiting, or collaborating? Send a
-          note — we read everything.
+          Questions about the open room, a short-term stay, visiting, or
+          collaborating? Send a note — we read everything.
           {contactEmail ? (
             <>
               {" "}

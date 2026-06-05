@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -16,7 +17,7 @@ const residents: {
   role: string;
   bio: string;
   initial: string;
-  isCat?: boolean;
+  photo?: { src: string; alt: string };
 }[] = [
   {
     name: "Cynthia",
@@ -41,27 +42,12 @@ const residents: {
     role: "House cat",
     bio: "Senior House Cat. Duties include sunbeam quality assurance, supervising the weekly house dinner from a respectful distance, and greeting guests — on his terms. Hypoallergenic he is not.",
     initial: "S",
-    isCat: true,
+    photo: {
+      src: "/images/residents/steve.jpg",
+      alt: "Steve, an orange tabby cat",
+    },
   },
 ];
-
-function CatAvatar() {
-  return (
-    <svg viewBox="0 0 64 64" className="h-12 w-12 text-cream" aria-hidden>
-      <path
-        d="M35 61 C47 63 55 56 52 45"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="4.5"
-        strokeLinecap="round"
-      />
-      <path d="M11 64 C11 44 15 31 24 26 C33 31 37 45 37 64 Z" fill="currentColor" />
-      <circle cx="24" cy="17" r="9.5" fill="currentColor" />
-      <polygon points="16,13 13.5,2.5 23,7.5" fill="currentColor" />
-      <polygon points="25,7.5 34.5,2.5 32,13" fill="currentColor" />
-    </svg>
-  );
-}
 
 export default function ResidentsPage() {
   return (
@@ -72,7 +58,8 @@ export default function ResidentsPage() {
           <SectionHeading eyebrow="Residents" title="Who lives at Locus" />
           <Reveal delay={0.08}>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-              Three humans, one cat, and{" "}
+              Three humans, one cat, usually a foster cat passing through
+              (currently March, a short-term resident), and{" "}
               <Link
                 href="/room"
                 className="font-medium text-accent underline-offset-4 hover:underline"
@@ -89,9 +76,15 @@ export default function ResidentsPage() {
               <Reveal key={person.name} delay={i * 0.07} className="h-full">
                 <li className="flex h-full flex-col rounded-lg border border-border bg-surface p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                   <div className="flex items-center gap-4">
-                    <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-accent">
-                      {person.isCat ? (
-                        <CatAvatar />
+                    <div className="relative flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full bg-accent">
+                      {person.photo ? (
+                        <Image
+                          src={person.photo.src}
+                          alt={person.photo.alt}
+                          fill
+                          sizes="64px"
+                          className="object-cover"
+                        />
                       ) : (
                         <span className="font-display text-3xl font-medium text-cream">
                           {person.initial}

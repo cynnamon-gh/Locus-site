@@ -33,6 +33,18 @@ export function Living() {
                 </Link>{" "}
                 you would be living with.
               </p>
+              <p>
+                Not looking to move in? We also host short-term stays — if
+                you are passing through Philadelphia and need a place to land
+                for a bit,{" "}
+                <a
+                  href="#contact"
+                  className="font-medium text-accent underline-offset-4 hover:underline"
+                >
+                  send a request
+                </a>
+                .
+              </p>
             </div>
           </Reveal>
           <Reveal delay={0.18}>
