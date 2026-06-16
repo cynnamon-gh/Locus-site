@@ -13,8 +13,8 @@ export function Intro() {
         <Reveal delay={0.1}>
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
             <p className="drop-cap">
-              Locus is a group house in West Philadelphia. We host events —
-              talks, dinners, game nights, coworking — for the Effective
+              Locus is a group house in West Philadelphia. We host events, such
+              as talks, dinners, game nights, and coworking, for the Effective
               Altruism, rationalist, and post-rationalist communities in
               Philadelphia. Public events go on our{" "}
               <a
@@ -23,7 +23,7 @@ export function Intro() {
               >
                 calendar
               </a>
-              ; if you are organizing something and need a venue,{" "}
+              , and if you are organizing something and need a venue,{" "}
               <Link
                 href="/contact"
                 className="font-medium text-accent underline-offset-4 hover:underline"
@@ -33,12 +33,12 @@ export function Intro() {
               .
             </p>
             <p>
-              {/* TODO: drop in the founding year / a line of origin story if you want it. */}
-              We started Locus to give these communities an anchor on the East
-              Coast — Philadelphia sits between New York and DC at a fraction
-              of the rent, which made it the place to build one. The name is a
-              pun: a <em>locus</em> is a center point, and the house is on
-              Locust Street. We are not sorry.
+              Cynthia and Jaime founded Locus as its master tenants and moved
+              in in April 2026, to give these communities another anchor on the
+              East Coast. Philadelphia sits between New York and DC at a
+              fraction of the rent, which made it the place to build one. A{" "}
+              <em>locus</em> is the place where something happens, or the point
+              you act from. The house also sits on Locust Street.
             </p>
             <p>
               Curious who lives here? {" "}

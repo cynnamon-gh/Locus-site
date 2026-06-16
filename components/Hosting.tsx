@@ -6,7 +6,7 @@ const kinds = [
   {
     title: "Talks",
     description:
-      "Teach the room something. “Here’s what far-UV is and why it’s the future of disease control.” Bring slides — we have a projector.",
+      "Teach the room something. “Here’s what far-UV is and why it’s the future of disease control.” Bring slides; we have a projector.",
   },
   {
     title: "Community events",
@@ -57,7 +57,7 @@ export function Hosting() {
             </h3>
             <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">
               The living room seats about twelve, if everyone is cozy. The
-              backyard is still being built out — in theory it could hold more,
+              backyard is still being built out, and in theory could hold more,
               but it is not ready yet. Tell us what you are planning and we will
               sort out the room.{" "}
               <Link

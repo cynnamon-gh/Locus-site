@@ -57,17 +57,17 @@ export default function LivePage() {
             <Reveal delay={0.08}>
               <div className="space-y-5 text-lg leading-relaxed text-muted">
                 <p>
-                  Locus has five bedrooms; this one is open. Hardwood floors,
-                  big windows, a closet, and a built-in shelving nook. In the
-                  realtor&apos;s staging it fits a bed on one side and a desk
-                  on the other — the furniture was theirs, but the geometry
-                  checks out.
+                  Locus has five bedrooms, and this one is open. Hardwood
+                  floors, big windows, a closet, and a built-in shelving nook.
+                  In the realtor&apos;s staging it fit a bed on one side and a
+                  desk on the other. That furniture was theirs, not ours, so
+                  the room comes unfurnished, but the geometry checks out.
                 </p>
                 <p>
                   The fifth bedroom stays free as a shared office and guest
                   room, so your visitors do not cost you floor space. Each
-                  resident cooks one vegetarian dinner for the house per week —
-                  you would too.
+                  resident cooks one vegetarian dinner for the house each week,
+                  and you would too.
                 </p>
                 <p>
                   Location: University City, close to Penn&apos;s campus.
@@ -77,7 +77,8 @@ export default function LivePage() {
                 </p>
                 <p>
                   We host events for the Effective Altruism, rationalist, and
-                  post-rationalist communities — talks, game nights, dinners.{" "}
+                  post-rationalist communities, like talks, game nights, and
+                  dinners.{" "}
                   <Link
                     href="/residents"
                     className="font-medium text-accent underline-offset-4 hover:underline"
@@ -85,6 +86,12 @@ export default function LivePage() {
                     Meet the residents
                   </Link>{" "}
                   to see who you would be living with.
+                </p>
+                <p>
+                  If intentional coliving and community sound like your thing,
+                  and you want to live in a beautiful Victorian townhome in the
+                  greatest city in the world, send us a ping. Even if you are
+                  not sure yet, we are glad to talk it through.
                 </p>
               </div>
             </Reveal>
@@ -142,7 +149,7 @@ export default function LivePage() {
               ))}
             </ul>
             <p className="mt-4 text-base text-muted">
-              The house also has cats (hi, Steve) — worth knowing if you are
+              The house also has cats (hi, Steve), worth knowing if you are
               allergic.
             </p>
           </div>
@@ -191,8 +198,8 @@ export default function LivePage() {
               <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
                 <p>
                   Rent and utilities are simple: everything splits equally.
-                  For shared purchases — furniture, kitchen gear, the
-                  eventual fire pit — we follow Supernuclear&apos;s{" "}
+                  For shared purchases like furniture, kitchen gear, and the
+                  eventual fire pit, we follow Supernuclear&apos;s{" "}
                   <a
                     href={SUPERNUCLEAR_FINANCE_GUIDE_URL}
                     target="_blank"
