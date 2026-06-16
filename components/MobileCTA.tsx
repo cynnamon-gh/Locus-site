@@ -13,7 +13,7 @@ export function MobileCTA() {
           Calendar
         </a>
         <a
-          href="#contact"
+          href="/contact"
           className="flex min-h-11 flex-1 items-center justify-center rounded-md bg-accent text-sm font-medium text-cream"
         >
           Contact

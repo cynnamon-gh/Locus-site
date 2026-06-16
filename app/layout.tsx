@@ -19,13 +19,13 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Locus — EA community house in West Philadelphia",
+  title: "Locus — community house in West Philadelphia",
   description:
-    "Locus is an Effective Altruism and adjacent group house and community space in West Philadelphia — a place to live, think, and gather.",
+    "Locus is a group house and event space in West Philadelphia for the Effective Altruism, rationalist, and post-rationalist communities — a place to gather, think, and live.",
   openGraph: {
     title: "Locus — West Philadelphia",
     description:
-      "EA-adjacent group house and community space in West Philadelphia.",
+      "A group house and event space in West Philadelphia for the EA, rationalist, and post-rationalist communities.",
     images: [{ url: "/images/hero/hero.jpg", width: 1200, height: 630 }],
   },
 };

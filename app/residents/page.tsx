@@ -9,7 +9,7 @@ import { Reveal } from "@/components/motion/Reveal";
 export const metadata: Metadata = {
   title: "Meet the residents — Locus",
   description:
-    "The people (and cat) of Locus, an EA-adjacent group house in West Philadelphia.",
+    "The people (and cat) of Locus, a group house in West Philadelphia for the EA, rationalist, and post-rationalist communities.",
 };
 
 const residents: {
@@ -22,13 +22,13 @@ const residents: {
   {
     name: "Cynthia",
     role: "Resident",
-    bio: "ML engineer by day. Board game collector and host of the biweekly game nights, plant-forward cook, cat fosterer, and frequently off at a concert.",
+    bio: "ML engineer by day. Board game collector and host of the biweekly game nights, plant-forward cook and baker, cat fosterer, and frequently off at a concert.",
     initial: "C",
   },
   {
     name: "Jaime",
     role: "Resident",
-    bio: "Resident Tech Czar — the projector, the sound bar, and the secondary wifi access point all exist because he researched and set them up. Owner of Steve and Steve's biggest fan. Found at punk and metal shows, making art at home and on the street, and deep in philosophy and theory.",
+    bio: "Jaime, Steve's father, enjoyer of art, literature, philosophy, tomatoes, and sitting on rocks. Works on space science stuff.",
     initial: "J",
   },
   {
@@ -40,7 +40,7 @@ const residents: {
   {
     name: "Steve",
     role: "House cat",
-    bio: "Senior House Cat. Duties include sunbeam quality assurance, supervising the weekly house dinner from a respectful distance, and greeting guests — on his terms. Hypoallergenic he is not.",
+    bio: "Senior House Cat. Duties include sunbeam quality assurance, supervising the weekly house dinner from a respectful distance, and greeting guests — on his terms. Hypoallergenic he is not. Orange, he is.",
     initial: "S",
     photo: {
       src: "/images/residents/steve.jpg",
@@ -61,7 +61,7 @@ export default function ResidentsPage() {
               Three humans, one cat, usually a foster cat passing through
               (currently March, a short-term resident), and{" "}
               <Link
-                href="/room"
+                href="/live"
                 className="font-medium text-accent underline-offset-4 hover:underline"
               >
                 one open room
@@ -119,17 +119,17 @@ export default function ResidentsPage() {
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-4">
                 <Link
-                  href="/room"
+                  href="/live"
                   className="inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-6 text-base font-medium text-cream transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:shadow-accent/25 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                 >
                   See the room
                 </Link>
-                <a
-                  href="/#contact"
+                <Link
+                  href="/contact"
                   className="inline-flex min-h-12 items-center justify-center rounded-md border border-accent/30 px-6 text-base font-medium text-accent transition-colors hover:bg-accent/5"
                 >
                   Say hello
-                </a>
+                </Link>
               </div>
             </div>
           </Reveal>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CALENDAR_URL } from "@/lib/constants";
 import { Reveal } from "./motion/Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -27,6 +28,16 @@ export function CalendarSection() {
           >
             Open Google Calendar
           </a>
+          <p className="mt-8 text-base text-muted">
+            Have a question, or want to host something here?{" "}
+            <Link
+              href="/contact"
+              className="font-medium text-accent underline-offset-4 hover:underline"
+            >
+              Contact us
+            </Link>
+            .
+          </p>
         </Reveal>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/Footer";
+import { PhotoSlideshow } from "@/components/PhotoSlideshow";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteNav } from "@/components/SiteNav";
 import { Reveal } from "@/components/motion/Reveal";
@@ -12,12 +12,12 @@ import {
   SUPERNUCLEAR_FINANCE_GUIDE_URL,
   VIDEO_TOUR_URL,
 } from "@/lib/constants";
-import { ROOM_PHOTOS } from "@/lib/photos";
+import { PHOTOS } from "@/lib/photos";
 
 export const metadata: Metadata = {
-  title: "The open room — Locus",
+  title: "Live here — Locus",
   description:
-    "One room is open at Locus, an EA-adjacent group house in West Philadelphia. $1,125/month plus shared utilities, hardwood floors, built-in shelving, and good housemates.",
+    "One room is open at Locus, a group house in West Philadelphia for the EA, rationalist, and post-rationalist communities. $1,125/month plus shared utilities, in-house laundry, dishwasher, and good housemates.",
 };
 
 const utilities = [
@@ -35,13 +35,24 @@ const utilities = [
   },
 ];
 
-export default function RoomPage() {
+const included = [
+  "Washer & dryer in-house",
+  "Dishwasher",
+  "Very high ceilings",
+  "Big backyard (fire pit in the works)",
+  "Front porch",
+  "Projector for talks & movie nights",
+  "Shared office & guest room",
+  "Lots of books and art",
+];
+
+export default function LivePage() {
   return (
     <>
       <SiteNav />
       <main className="px-5 pb-20 pt-28 md:px-8 md:pb-28 md:pt-36">
         <div className="mx-auto max-w-6xl">
-          <SectionHeading eyebrow="Living here" title="The open room" />
+          <SectionHeading eyebrow="Live here" title="The open room" />
           <div className="mt-10 grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-start">
             <Reveal delay={0.08}>
               <div className="space-y-5 text-lg leading-relaxed text-muted">
@@ -53,13 +64,10 @@ export default function RoomPage() {
                   checks out.
                 </p>
                 <p>
-                  The rest of the house: very high ceilings, washer and
-                  dryer, dishwasher, a genuinely large backyard (fire pit in
-                  the works), a front porch, a projector, and a lot of art
-                  and books. The fifth bedroom stays free as a shared office
-                  and guest room, so your visitors do not cost you floor
-                  space. Each resident cooks one vegetarian dinner for the
-                  house per week — you would too.
+                  The fifth bedroom stays free as a shared office and guest
+                  room, so your visitors do not cost you floor space. Each
+                  resident cooks one vegetarian dinner for the house per week —
+                  you would too.
                 </p>
                 <p>
                   Location: University City, close to Penn&apos;s campus.
@@ -68,8 +76,8 @@ export default function RoomPage() {
                   Park down the street.
                 </p>
                 <p>
-                  We are EA-adjacent and we like hosting — talks, game
-                  nights, dinners.{" "}
+                  We host events for the Effective Altruism, rationalist, and
+                  post-rationalist communities — talks, game nights, dinners.{" "}
                   <Link
                     href="/residents"
                     className="font-medium text-accent underline-offset-4 hover:underline"
@@ -110,74 +118,71 @@ export default function RoomPage() {
                     </dd>
                   </div>
                 </dl>
-                <a
-                  href="/#contact"
+                <Link
+                  href="/contact"
                   className="mt-8 inline-flex min-h-12 w-full items-center justify-center rounded-md bg-accent text-base font-medium text-cream transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:shadow-accent/25 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                 >
                   Ask about the room
-                </a>
+                </Link>
               </aside>
             </Reveal>
           </div>
 
+          {/* What's included */}
+          <div className="mt-16 max-w-3xl">
+            <h2 className="font-display text-2xl font-medium text-foreground">
+              What&apos;s in the house
+            </h2>
+            <ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-3 text-base text-muted sm:grid-cols-2">
+              {included.map((item) => (
+                <li key={item} className="flex items-start gap-2.5">
+                  <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-terracotta" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-base text-muted">
+              The house also has cats (hi, Steve) — worth knowing if you are
+              allergic.
+            </p>
+          </div>
+
           {/* Photos */}
-          <div className="mt-16 grid gap-4 md:grid-cols-2">
-            <Reveal className="md:col-span-2">
-              <div className="relative aspect-[3/2] overflow-hidden rounded-xl border border-border">
-                <Image
-                  src={ROOM_PHOTOS[0].src}
-                  alt={ROOM_PHOTOS[0].alt}
-                  fill
-                  priority
-                  sizes="(min-width: 1152px) 1152px, 100vw"
-                  className="object-cover"
-                />
+          <div className="mt-20">
+            <SectionHeading eyebrow="Photos" title="Every room" />
+            <Reveal delay={0.08}>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+                Every photo we have, from the realtor&apos;s tour and our own
+                first walkthrough. Anything with furniture in it is the
+                realtor&apos;s staging, not our actual stuff. Arrow keys work.
+              </p>
+            </Reveal>
+            <Reveal delay={0.16}>
+              <div className="mt-10">
+                <PhotoSlideshow photos={PHOTOS} />
               </div>
             </Reveal>
-            {ROOM_PHOTOS.slice(1).map((photo, i) => (
-              <Reveal key={photo.src} delay={0.08 * (i + 1)}>
-                <div className="relative aspect-[3/2] overflow-hidden rounded-xl border border-border">
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    fill
-                    sizes="(min-width: 768px) 50vw, 100vw"
-                    className="object-cover"
-                  />
-                </div>
-              </Reveal>
-            ))}
+            <Reveal delay={0.1}>
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href={VIDEO_TOUR_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-12 items-center justify-center rounded-md bg-accent px-6 text-base font-medium text-cream transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:shadow-accent/25 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                >
+                  Watch the video walkthrough
+                </a>
+                <a
+                  href={DRIVE_FOLDER_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-12 items-center justify-center rounded-md border border-accent/30 px-6 text-base font-medium text-accent transition-colors hover:bg-accent/5"
+                >
+                  Browse the full Drive folder
+                </a>
+              </div>
+            </Reveal>
           </div>
-          <Reveal delay={0.08}>
-            <p className="mt-4 text-sm text-muted">
-              More in the{" "}
-              <Link
-                href="/photos"
-                className="font-medium text-accent underline-offset-4 hover:underline"
-              >
-                photo slideshow
-              </Link>
-              , the{" "}
-              <a
-                href={VIDEO_TOUR_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-accent underline-offset-4 hover:underline"
-              >
-                video walkthrough
-              </a>
-              , and the{" "}
-              <a
-                href={DRIVE_FOLDER_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-accent underline-offset-4 hover:underline"
-              >
-                full Drive folder
-              </a>
-              .
-            </p>
-          </Reveal>
 
           {/* How we share costs */}
           <div className="mt-20 max-w-3xl">

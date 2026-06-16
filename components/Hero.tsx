@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 import {
   motion,
@@ -92,8 +93,9 @@ export function Hero() {
             variants={item}
             className="mt-5 max-w-xl text-[clamp(1rem,1.4vw,1.25rem)] leading-relaxed text-cream/90"
           >
-            An EA-adjacent group house and event space in West Philadelphia.
-            Four residents, a busy calendar, and one open room.
+            A group house in West Philadelphia that hosts events for the
+            Effective Altruism, rationalist, and post-rationalist communities.
+            Come to something on the calendar — or come live here.
           </motion.p>
         </div>
 
@@ -102,10 +104,12 @@ export function Hero() {
           className="mt-8 flex shrink-0 flex-col gap-3 sm:flex-row lg:mt-0 lg:flex-col lg:items-stretch lg:pb-6"
         >
           <a
-            href="#living"
+            href={CALENDAR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-cream px-6 text-base font-medium text-umber transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-umber/30 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
           >
-            One room available
+            Follow our calendar
             <span
               aria-hidden
               className="transition-transform duration-300 group-hover:translate-x-0.5"
@@ -113,14 +117,12 @@ export function Hero() {
               →
             </span>
           </a>
-          <a
-            href={CALENDAR_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/live"
             className="inline-flex min-h-12 items-center justify-center rounded-md border border-cream/40 bg-cream/10 px-6 text-base font-medium text-cream backdrop-blur-sm transition-all duration-300 hover:border-cream/70 hover:bg-cream/20"
           >
-            Follow our calendar
-          </a>
+            Live here
+          </Link>
         </motion.div>
       </motion.div>
 

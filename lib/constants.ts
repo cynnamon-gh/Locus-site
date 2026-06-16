@@ -28,11 +28,8 @@ export const CONTACT_TOPICS = [
 export type ContactTopic = (typeof CONTACT_TOPICS)[number];
 
 export const NAV_LINKS = [
-  { href: "/#about", label: "About" },
-  { href: "/#house", label: "The house" },
-  { href: "/room", label: "The room" },
-  { href: "/residents", label: "Residents" },
-  { href: "/photos", label: "Photos" },
   { href: "/#calendar", label: "Calendar" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/live", label: "Live here" },
+  { href: "/residents", label: "Residents" },
+  { href: "/contact", label: "Contact" },
 ] as const;

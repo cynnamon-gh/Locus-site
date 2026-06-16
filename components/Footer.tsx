@@ -41,8 +41,8 @@ export function Footer() {
           West Philadelphia · {year}
         </p>
         <nav aria-label="Footer" className="flex gap-5">
-          <Link href="/room" className="transition-colors hover:text-foreground">
-            The room
+          <Link href="/live" className="transition-colors hover:text-foreground">
+            Live here
           </Link>
           <Link
             href="/residents"
@@ -51,13 +51,13 @@ export function Footer() {
             Residents
           </Link>
           <Link
-            href="/photos"
+            href="/contact"
             className="transition-colors hover:text-foreground"
           >
-            Photos
+            Contact
           </Link>
         </nav>
-        <p>Part of the Effective Altruism ecosystem and adjacent communities.</p>
+        <p>For the Effective Altruism, rationalist, and post-rationalist communities.</p>
       </div>
     </footer>
   );
