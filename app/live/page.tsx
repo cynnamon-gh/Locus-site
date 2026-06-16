@@ -73,7 +73,9 @@ export default function LivePage() {
                   Location: University City, close to Penn&apos;s campus.
                   Multiple grocery stores within a short walk (nearest: six
                   minutes), a movie theater, plenty of restaurants, and Clark
-                  Park down the street.
+                  Park and the Woodlands down the street. Street parking is
+                  almost always open within less than a block, and it is about
+                  a ten-minute walk to both the trolley and the subway (the L).
                 </p>
                 <p>
                   We host events for the Effective Altruism, rationalist, and
@@ -88,10 +90,19 @@ export default function LivePage() {
                   to see who you would be living with.
                 </p>
                 <p>
+                  We chose an old house on purpose. The Victorian style won us
+                  over the greige of new construction, and we feel like we have
+                  more freedom here and more of a connection to the place. The
+                  very high ceilings, the hardwood, the porch, and the backyard
+                  sealed it.
+                </p>
+                <p>
                   If intentional coliving and community sound like your thing,
                   and you want to live in a beautiful Victorian townhome in the
-                  greatest city in the world, send us a ping. Even if you are
-                  not sure yet, we are glad to talk it through.
+                  greatest city in the world, send us a ping. We are happy to be
+                  flexible on move-in timing, lease length, and other
+                  accommodations, so just ask. Even if you are not sure yet, we
+                  are glad to talk it through.
                 </p>
               </div>
             </Reveal>
