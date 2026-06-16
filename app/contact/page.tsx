@@ -10,13 +10,14 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const contactEmail = process.env.CONTACT_EMAIL;
-
+  // Intentionally not passing a contact email: submissions are delivered
+  // to CONTACT_EMAIL server-side, so our addresses stay private and out of
+  // reach of scrapers.
   return (
     <>
       <SiteNav />
       <main className="pt-16 md:pt-[4.25rem]">
-        <ContactForm contactEmail={contactEmail} />
+        <ContactForm />
       </main>
       <Footer />
     </>

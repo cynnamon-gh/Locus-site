@@ -55,10 +55,16 @@ export async function POST(request: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.CONTACT_EMAIL;
   const from = process.env.RESEND_FROM_EMAIL;
+  // CONTACT_EMAIL may hold one or more comma-separated recipients.
+  // This is read server-side only, so the addresses are never exposed
+  // to the browser.
+  const to = (process.env.CONTACT_EMAIL ?? "")
+    .split(",")
+    .map((address) => address.trim())
+    .filter(Boolean);
 
-  if (!apiKey || !to || !from) {
+  if (!apiKey || to.length === 0 || !from) {
     return NextResponse.json(
       { error: "Contact form is not configured yet." },
       { status: 503 },
@@ -72,7 +78,7 @@ export async function POST(request: Request) {
 
   const { error } = await resend.emails.send({
     from,
-    to: [to],
+    to,
     replyTo: trimmedEmail,
     subject: `[Locus] ${topic} — ${trimmedName}`,
     text: [
